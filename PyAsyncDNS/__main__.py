@@ -25,7 +25,7 @@ This package implements a basic asynchronous DNS client and server
 with a feature to exfiltrate data through DNS.
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"

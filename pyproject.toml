@@ -4,7 +4,7 @@
 
 [project]
 name = "PyAsyncDNS"
-version = "0.0.1"
+version = "0.0.3"
 dependencies = []
 authors = [
     {name = "Maurice Lambert", email = "mauricelambert434@gmail.com"},
@@ -43,9 +43,12 @@ PyAsyncDNS = "PyAsyncDNS:main"
 
 [project.urls]
 "Github" = "https://github.com/mauricelambert/PyAsyncDNS"
-"Documentation" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS.html"
-"Python Executable" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS.pyz"
-"Windows Executable" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS.exe"
+"Documentation client" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/client.html"
+"Documentation server" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/server.html"
+"Documentation exfiltrator" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator.html"
+"Documentation exfiltrator server" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator_server.html"
+"Python Executable" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.pyz"
+"Windows Executable" = "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.exe"
 
 [tool.setuptools]
 include-package-data = true
