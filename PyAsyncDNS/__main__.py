@@ -87,7 +87,7 @@ if __package__:
         query_tcp, query,
     )
     from .exfiltrator_client import process_directories
-    from .exfiltrator_server import start_exfil_server
+    from .exfiltrator_server import start_exfiltrator_server
     from .server import Zone, DNSServer
 else:
     from datatypes import (
