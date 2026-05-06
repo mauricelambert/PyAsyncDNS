@@ -4,7 +4,7 @@
 ###################
 #    This package implements a basic asynchronous DNS client and server
 #    with a feature to exfiltrate data through DNS.
-#    Copyright (C) 2025  PyAsyncDNS
+#    Copyright (C) 2025, 2026  PyAsyncDNS
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ This package implements a basic asynchronous DNS client and server
 with a feature to exfiltrate data through DNS.
 """
 
-__version__ = "0.0.3"
+__version__ = "1.0.0"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"
@@ -36,11 +36,64 @@ with a feature to exfiltrate data through DNS.
 """
 __url__ = "https://github.com/mauricelambert/PyAsyncDNS"
 
-# __all__ = []
+__all__ = [
+    "RecordType",
+    "RecordClass",
+    "Opcode",
+    "ResponseCode",
+    "DNSFlags",
+    "DNSHeader",
+    "DNSQuestion",
+    "ARecord",
+    "AAAARecord",
+    "CNAMERecord",
+    "NSRecord",
+    "PTRRecord",
+    "MXRecord",
+    "TXTRecord",
+    "SRVRecord",
+    "SOARecord",
+    "CAARecord",
+    "DNSResourceRecord",
+    "DNSMessage",
+    "encode_name",
+    "decode_name",
+    "DNSCodec",
+    "codec",
+    "Zone",
+    "DNSRequestHandler",
+    "DNSServer",
+    "start_dns_server",
+    "send_udp_raw",
+    "send_tcp_raw",
+    "build_query",
+    "query",
+    "query_udp",
+    "query_tcp",
+    "resolve_a",
+    "resolve_aaaa",
+    "resolve_cname",
+    "resolve_mx",
+    "resolve_ns",
+    "resolve_txt",
+    "resolve_srv",
+    "resolve_ptr",
+    "resolve_soa",
+    "resolve_caa",
+    "resolve_any",
+    "resolve",
+    "ExfiltratorFile",
+    "exfiltrator_resolver",
+    "start_exfiltrator_server",
+    "process_chunks",
+    "read_and_chunk_file",
+    "process_directory",
+    "process_directories",
+]
 
 __license__ = "GPL-3.0 License"
 __copyright__ = """
-PyAsyncDNS  Copyright (C) 2025  Maurice Lambert
+PyAsyncDNS  Copyright (C) 2025, 2026  Maurice Lambert
 This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it
 under certain conditions.
@@ -49,22 +102,124 @@ copyright = __copyright__
 license = __license__
 
 if __package__:
-    from . import server
-    from .client import resolve_all
-    from .server import start_async_dns_server
-    from .exfiltrator_server import get_response as get_exfiltration
-    from .exfiltrator import (
-        process_directories as exfiltrate_directories,
-        process_directory as exfiltrate_directory,
-        read_and_chunk_file as exfiltrate_file,
+    from .datatypes import (
+        RecordType,
+        RecordClass,
+        Opcode,
+        ResponseCode,
+        DNSFlags,
+        DNSHeader,
+        DNSQuestion,
+        ARecord,
+        AAAARecord,
+        CNAMERecord,
+        NSRecord,
+        PTRRecord,
+        MXRecord,
+        TXTRecord,
+        SRVRecord,
+        SOARecord,
+        CAARecord,
+        DNSResourceRecord,
+        DNSMessage,
     )
+    from .codecs import (
+        encode_name,
+        decode_name,
+        DNSCodec,
+        codec,
+    )
+    from .server import (Zone, DNSRequestHandler, DNSServer, start_dns_server)
+    from .client import (
+        send_udp_raw,
+        send_tcp_raw,
+        build_query,
+        query,
+        query_udp,
+        query_tcp,
+        resolve_a,
+        resolve_aaaa,
+        resolve_cname,
+        resolve_mx,
+        resolve_ns,
+        resolve_txt,
+        resolve_srv,
+        resolve_ptr,
+        resolve_soa,
+        resolve_caa,
+        resolve_any,
+        resolve,
+    )
+    from .exfiltrator_server import (
+        ExfiltratorFile,
+        exfiltrator_resolver,
+        start_exfiltrator_server,
+    )
+    from .exfiltrator_client import (
+        process_chunks,
+        read_and_chunk_file,
+        process_directory,
+        process_directories,
+    )
+    from .__main__ import main
 else:
-    import server
-    from client import resolve_all
-    from server import start_async_dns_server
-    from exfiltrator_server import get_response as get_exfiltration
-    from exfiltrator import (
-        process_directories as exfiltrate_directories,
-        process_directory as exfiltrate_directory,
-        read_and_chunk_file as exfiltrate_file,
+    from datatypes import (
+        RecordType,
+        RecordClass,
+        Opcode,
+        ResponseCode,
+        DNSFlags,
+        DNSHeader,
+        DNSQuestion,
+        ARecord,
+        AAAARecord,
+        CNAMERecord,
+        NSRecord,
+        PTRRecord,
+        MXRecord,
+        TXTRecord,
+        SRVRecord,
+        SOARecord,
+        CAARecord,
+        DNSResourceRecord,
+        DNSMessage,
     )
+    from codecs import (
+        encode_name,
+        decode_name,
+        DNSCodec,
+        codec,
+    )
+    from server import (Zone, DNSRequestHandler, DNSServer, start_dns_server)
+    from client import (
+        send_udp_raw,
+        send_tcp_raw,
+        build_query,
+        query,
+        query_udp,
+        query_tcp,
+        resolve_a,
+        resolve_aaaa,
+        resolve_cname,
+        resolve_mx,
+        resolve_ns,
+        resolve_txt,
+        resolve_srv,
+        resolve_ptr,
+        resolve_soa,
+        resolve_caa,
+        resolve_any,
+        resolve,
+    )
+    from exfiltrator_server import (
+        ExfiltratorFile,
+        exfiltrator_resolver,
+        start_exfiltrator_server,
+    )
+    from exfiltrator_client import (
+        process_chunks,
+        read_and_chunk_file,
+        process_directory,
+        process_directories,
+    )
+    from __main__ import main

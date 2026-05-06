@@ -18,9 +18,11 @@ setup(
     url="https://github.com/mauricelambert/PyAsyncDNS",
     project_urls={
         "Github": "https://github.com/mauricelambert/PyAsyncDNS",
+        "Documentation datatypes": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/datatypes.html",
+        "Documentation codec": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/codec.html",
         "Documentation client": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/client.html",
         "Documentation server": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/server.html",
-        "Documentation exfiltrator": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator.html",
+        "Documentation exfiltrator client": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator_client.html",
         "Documentation exfiltrator server": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/exfiltrator_server.html",
         "Python Executable": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.pyz",
         "Windows Executable": "https://mauricelambert.github.io/info/python/security/PyAsyncDNS/PyAsyncDNS.exe",
