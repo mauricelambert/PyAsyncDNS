@@ -123,7 +123,7 @@ if __package__:
         DNSResourceRecord,
         DNSMessage,
     )
-    from .codecs import (
+    from .codec import (
         encode_name,
         decode_name,
         DNSCodec,
@@ -184,7 +184,7 @@ else:
         DNSResourceRecord,
         DNSMessage,
     )
-    from codecs import (
+    from codec import (
         encode_name,
         decode_name,
         DNSCodec,
